@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+
+:root {
+  font-size: 62.5%; /* 1rem é 10px agora*/
+
+  --background-primary: #F4F5FB
+  --background-secundary: #FFFFFF
+
+  --color-brand: #CA3884;
+  --color-brand-hover: #A52C6B;
+  --color-danger: #C93847;
+
+  --content-primary: #080B12;
+  --content-secondary: #374151;
+  --content-tertiary: #9CA3AF;
+  --always-white: #FFFFFF;
+
+  --border-primary: #D1D5D8;
+  --border-hover: #B9C2D0;
+
+  --primary-font: "Inter", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-primary);
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: bold;
+}
