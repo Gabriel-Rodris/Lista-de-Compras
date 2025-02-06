@@ -11,8 +11,8 @@
 :root {
   font-size: 62.5%; /* 1rem é 10px agora*/
 
-  --background-primary: #F4F5FB
-  --background-secundary: #FFFFFF
+  --background-primary: #F4F5FB;
+  --background-secundary: #FFFFFF;
 
   --color-brand: #CA3884;
   --color-brand-hover: #A52C6B;
@@ -37,8 +37,108 @@ body {
   background-color: var(--background-primary);
 }
 
+main {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 h1 {
   font-family: var(--primary-font);
   font-size: 24px;
   font-weight: bold;
+}
+
+.container-btn-voltar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.container-btn-voltar span {
+  color: var(--color-brand);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+.container-btn-voltar span:hover {
+  color: var(--color-brand-hover);
+}
+
+.subtitle h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-adicionar-item {
+  width: 400px;
+}
+.input-adicionar-item input {
+  border: 2px solid var(--border-primary);
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+.input-adicionar-item input:hover {
+  border: 2px solid var(--border-hover);
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+.input-adicionar-item button {
+  border: 0px solid var(--border-hover);
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color: var(--color-brand);
+  color: var(--always-white);
+  cursor: pointer;
+}
+.input-adicionar-item button:hover {
+  border: 0px solid var(--border-hover);
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color: var(--color-brand-hover);
+  color: var(--always-white);
+}
+
+.to-do-list {
+  margin: 40px 0px;
+}
+
+.to-do-item {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--background-secundary);
+  padding: 10px 20px;
+  width: 400px;
+}
+.to-do-item input {
+  margin-right: 10px;
+}
+.to-do-item p {
+  margin-right: 100px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container-mensagem {
+  display: flex;
+  background-color: var(--color-danger);
+  color: var(--always-white);
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+}
+.container-mensagem img:nth-child(1) {
+  margin-right: 10px;
+}
+.container-mensagem p {
+  margin-right: 10px;
 }
